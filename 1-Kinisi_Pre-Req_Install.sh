@@ -14,5 +14,5 @@ apt-get install postgresql -y
 apt-get install postgresql-server-dev-9.1 -y
 apt-get install postgresql-contrib-9.1 -y
 
-apt-get install apt-show-versions
+apt-get install apt-show-versions -y
 
