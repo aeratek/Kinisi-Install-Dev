@@ -3,7 +3,7 @@
 # Right now, the script prompts the admin for passwords for each
 
 SUPERUSER="kinisi_dba"; 
-APPUSER="kinisi_user"; 
+APPUSER="kinisi_db_user"; 
 DATABASE="platform"; 
 
 echo ""
