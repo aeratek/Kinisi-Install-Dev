@@ -21,10 +21,14 @@ echo ""
 echo -n "You will now be prompted for a new postgres user password."
 echo ""
 sleep 1
-#read PostgresUserPassword
-sudo passwd postgres
+#A hack to change the password to 'postgres'
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
 echo ""
 echo "Done setting postgres user password."
+echo ""
+echo "To change the postgres user's password, log in to"
+echo "the postgres server and type '\password postgres' "
+sleep 3
 echo "Please check for any errors above."
 sleep 1
 
